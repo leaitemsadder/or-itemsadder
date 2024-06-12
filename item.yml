@@ -1,0 +1,38 @@
+info:
+  namespace: originrealms
+items:
+  totem_of_keeping:
+    display_name: <white>Totem of Keeping
+    permission: xitems.admin
+    lore:
+    - <#9FC5F0>Keep your precious
+    - <#9FC5F0>inventory upon death
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 6084
+      textures:
+      - item/my_custom_texture.png
+#NBT:
+#{CustomBlock:"lunar_envelope_stack",CustomModelData:3478,Explosion:{Colors:[I;13319210],Type:0b},HideFlags:32,ItemProcessing:1b,
+#PublicBukkitValues:{Paintable:1b},display:{Lore:['{"italic":false,"color":"white","text":"ꑞ"}','{"italic":false,"color":"#D94361","text":"Lunar New Year Exclusive"}']}}
+  lunar_envelope_stack:
+    display_name: <white>Lunar Envelope Stack
+    permission: xitems.admin
+    lore:
+    - <white>ꑞ
+    - <#D94361>Lunar New Year Exclusive
+    resource:
+      material: LEATHER_HORSE_ARMOR
+      generate: true
+      model_id: 3478
+      textures:
+      - item/my_custom_texture.png
+    behaviours:
+      furniture:
+        entity: item_frame
+        solid: false
+        placeable_on:
+          walls: false
+          ceiling: false
+          floor: true
